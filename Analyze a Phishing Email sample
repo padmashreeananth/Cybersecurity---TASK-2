@@ -1,0 +1,76 @@
+Objective
+
+-To identify phishing characteristics in a suspicious email sample.
+
+Sample Email
+
+From: security-alert@sbi-verification.com
+
+To: customer@example.com
+
+Subject: Urgent: Your SBI Account Will Be Suspended
+
+Analysis of Phishing Indicators
+
+1. Suspicious Sender Address
+
+The email claims to be from SBI, but the sender address is:
+
+security-alert@sbi-verification.com
+
+-This is not an official SBI domain and may indicate email spoofing.
+
+2. Generic Greeting
+
+The email uses:
+
+Dear Customer
+
+-Legitimate banks usually address customers by their registered names.
+
+3. Urgent Language
+
+The message creates pressure by stating:
+
+Verify your account within the next 24 hours.
+
+-This is a common phishing tactic.
+
+4. Threatening Content
+
+-The email warns that online banking services will be suspended if immediate action is not taken.
+
+5. Request for Sensitive Information
+
+-The email asks users to verify account details through a link, which could lead to credential theft.
+
+6. Mismatched URL
+
+-The button text may appear legitimate, but the actual destination could redirect users to a fraudulent website.
+
+7. Email Spoofing
+
+-The sender pretends to represent SBI while using a suspicious domain name.
+
+8. Social Engineering
+
+-The attacker exploits fear and urgency to manipulate the recipient into clicking the link.
+
+Phishing Indicators Found
+
+-Suspicious sender address
+-Generic greeting
+-Urgent action request
+-Threatening language
+-Request for sensitive information
+-Mismatched URL
+-Email spoofing
+-Social engineering tactics
+
+Used Tool
+
+Header Analysis (MXToolbox Header Analyzer)
+
+Observation:
+
+Full email headers were not available; therefore, SPF, DKIM, and DMARC authentication checks could not be performed. However, the sender domain appears suspicious and does not match the official SBI domain. Sender authenticity should be verified using SPF, DKIM, and DMARC records, as suspicious sender domains may indicate email spoofing or phishing attempts.
